@@ -1,22 +1,22 @@
-com/zhouyu/Test.java
- com.zhouyu.Test
+com/zhouyu/MyFactoryBean.java
+ com.zhouyu.MyFactoryBean
 com/zhouyu/service/User.java
  com.zhouyu.service.User
 com/zhouyu/MyBeanPostProcess.java
  com.zhouyu.MyBeanPostProcess
 com/zhouyu/aspect/ZhouyuAspect.java
  com.zhouyu.aspect.ZhouyuAspect
-com/zhouyu/MyFactoryBean.java
- com.zhouyu.MyFactoryBean
-com/zhouyu/AppConfig.java
- com.zhouyu.AppConfig
 com/zhouyu/service/OrderService.java
  com.zhouyu.service.OrderService
-com/zhouyu/service/UserService.java
- com.zhouyu.service.UserService
+com/zhouyu/AppConfig.java
+ com.zhouyu.AppConfig
 com/zhouyu/MyBeanFactoryPostProcessor.java
  com.zhouyu.MyBeanFactoryPostProcessor
 com/zhouyu/Demo.java
  com.zhouyu.Demo
 com/zhouyu/MyInstantiationAwareBeanPostProcessor.java
  com.zhouyu.MyInstantiationAwareBeanPostProcessor
+com/zhouyu/service/UserService.java
+ com.zhouyu.service.UserService
+com/zhouyu/Test.java
+ com.zhouyu.Test

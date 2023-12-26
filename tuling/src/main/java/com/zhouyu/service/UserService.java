@@ -14,6 +14,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import java.util.Date;
 
 @Component
@@ -27,6 +28,8 @@ public class UserService {
 	}
 
 
-
-
+	//	@PreDestroy
+	public void destroy() {
+		System.out.println("destroy====================");
+	}
 }

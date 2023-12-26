@@ -50,6 +50,8 @@ public class Demo {
 		applicationContext.registerBeanDefinition("user", beanDefinition);
 		Object user = applicationContext.getBean("user");
 		System.out.println("user============:" + user);
+		applicationContext.close();
+
 
 
 		//BeanDefinitionReader 可以直接把某个类转换为BeanDefinition，并且会解析该类上的注解，它能解析的注解是：@Conditional，@Scope、@Lazy、@Primary、@DependsOn、@Role、@Description
@@ -69,6 +71,7 @@ public class Demo {
 		applicationContext2.refresh();
 		Object bean2 = applicationContext2.getBean("user1");
 		System.out.println("user2===============:" + bean2);
+
 
 		//ClassPathBeanDefinitionScanner 可以扫描某个包下面的类，并且把这些类转换为BeanDefinition，并且会解析这些类上的注解，扫描到的类上如果存在@Component注解，那么就会把这个类解析为一个BeanDefinition
 		AnnotationConfigApplicationContext applicationContext3 = new AnnotationConfigApplicationContext();

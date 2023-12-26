@@ -1837,12 +1837,12 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 
 		Object wrappedBean = bean;
 
-		// 初始化前
+		// 初始化前 @PostConstruct
 		if (mbd == null || !mbd.isSynthetic()) {
 			wrappedBean = applyBeanPostProcessorsBeforeInitialization(wrappedBean, beanName);
 		}
 
-		// 初始化
+		// 初始化 实现了InitializingBean
 		try {
 			invokeInitMethods(beanName, wrappedBean, mbd);
 		}
